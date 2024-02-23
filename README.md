@@ -1,14 +1,11 @@
-# React-Portfolio-MSO
-![Portfolio home preview image](/public/home-screenshot.png)
+# better-bio-site-mso
 
 ## Links
-* [portfolio](https://markohanesian.com/)
 
 ## Description
-My portfolio of development and design work with a link to my photography website
 
 ## User Story
-I need a website for showcasing my development, design, and photography
+I need a link in bio website that functions as a full website but provides a good experience on mobile for link in bio
 
 ## Built With
 * React
@@ -17,7 +14,6 @@ I need a website for showcasing my development, design, and photography
 * Material-Ui
 
 ## Planned Features/Outstanding Issues
-* Navigation tab highlighting to show user current page being browsed
 
 ## Authors
 * [Mark Ohanesian](https://github.com/markohanesian) 
