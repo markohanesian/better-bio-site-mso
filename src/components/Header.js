@@ -11,7 +11,7 @@ const useStyles = makeStyles({
     alignSelf: 'center',
   },
   heading: {
-    fontSize: "2.5rem",
+    fontSize: "20px",
     fontWeight: "300",
     marginTop: '1rem'
   },
@@ -19,9 +19,9 @@ const useStyles = makeStyles({
     display: 'flex',
     flexDirection: 'row',
     flexWrap: 'wrap',
-    fontSize: "1rem",
+    fontSize: "14px",
     fontWeight: "400",
-    maxWidth: '20rem'
+    maxWidth: '22rem'
   },
   container: {
     display: 'flex',
