@@ -4,8 +4,8 @@ import Typography from "@material-ui/core/Typography";
 
 const useStyles = makeStyles({
   image: {
-    height: "150px",
-    width: "150px",
+    height: "96px",
+    width: "96px",
     borderRadius: "50%",
     display: 'flex',
     alignSelf: 'center',
