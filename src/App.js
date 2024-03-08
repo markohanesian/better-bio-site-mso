@@ -12,10 +12,9 @@ import "./App.css";
 import NavBar from './components/NavBar'
 import Header from "../src/components/Header";
 import Footer from "../src/components/Footer";
-// Development items
-import DevItem from "./components/DevItem";
-// Design Items
+// Link types
 import DesignItem from "./components/DesignItem";
+import BasicLink from "./components/BasicLink"
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -74,6 +73,7 @@ function App() {
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
+      padding: '16px'
     },
     SectionIcon: {
       margin: '2rem 0 0 0',
@@ -143,30 +143,9 @@ function App() {
                 {/* Development Section */}
                 <Route path="/">
                   <Grid className={classes.gridContainer} container>
+                    <NavBar />
                     <Grid className={classes.DevContainer}>
-                      <NavBar />
-                      <DevItem
-                        cardImage="item-images/react-social-preview.png"
-                        cardTitle="ReactSocial"
-                        cardDescription="Social media web app built with React and Firebase"
-                        deployURL="https://social-media-app-mso.web.app/"
-                        codeURL="https://github.com/markohanesian/ReactSocial"
-                      />
-                      <DevItem
-                        cardImage="item-images/git-good.png"
-                        cardTitle="Git Good"
-                        cardDescription="Git language cheatsheet with copy to clipboard. Built with ReactJS and features a custom logo design"
-                        deployURL="https://git-cheatsheet-mso.netlify.app/"
-                        codeURL="https://github.com/markohanesian/git-cheatsheet-mso"
-                      />
-
-                      <DevItem
-                        cardImage="item-images/tetris-mso.png"
-                        cardTitle="tetris-mso"
-                        cardDescription="Inspired by the original Tetris game, playable with your keyboard, built with vanilla javascript"
-                        deployURL="https://markohanesian.github.io/tetris-mso/"
-                        codeURL="https://github.com/markohanesian/tetris-mso"
-                      />
+                      <BasicLink />
                     </Grid>
                   </Grid>
                 </Route>
