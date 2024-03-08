@@ -14,6 +14,7 @@ I need a link in bio website that functions as a full website but provides a goo
 * Material-Ui
 
 ## Planned Features/Outstanding Issues
+* Fix to be responsive in mobile layout
 
 ## Authors
 * [Mark Ohanesian](https://github.com/markohanesian) 
