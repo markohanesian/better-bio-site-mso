@@ -14,6 +14,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import { Link } from 'react-router-dom';
 
 const drawerWidth = 240;
 const navItems = ['Home', 'About','Services', 'Contact'];
@@ -35,7 +36,7 @@ function DrawerAppBar(props) {
       <List>
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
+            <ListItemButton sx={{ textAlign: 'center' }} component={Link} to={item.path}>
               <ListItemText primary={item} />
             </ListItemButton>
           </ListItem>
