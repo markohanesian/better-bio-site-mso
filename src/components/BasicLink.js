@@ -12,6 +12,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "left",
     alignItems: "center", // Center the avatar and text
     width: "100%",
+    maxWidth: "666px",
   },
   avatar: {
     marginRight: theme.spacing(1), // Space between avatar and text
