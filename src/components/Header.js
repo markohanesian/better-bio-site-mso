@@ -1,6 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
+import SocialBar from "./SocialBar";
 
 const useStyles = makeStyles({
   image: {
@@ -55,6 +56,7 @@ export default function Header() {
       >
         Enthusiastic and self-motivated full stack web developer and designer with 5+ years of web experience. Skillful communicator with experience planning, leading, and executing multiple projects with clarity and efficiency.
       </Typography>
+      <SocialBar />
     </div>
   );
 }
