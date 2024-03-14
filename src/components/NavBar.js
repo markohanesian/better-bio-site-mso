@@ -2,10 +2,11 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
-import CodeIcon from '@material-ui/icons/Code';
-import BrushIcon from '@material-ui/icons/Brush';
+import HomeIcon from '@mui/icons-material/Home';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import CameraAlt from '@material-ui/icons/CameraAlt';
 import { useHistory } from 'react-router-dom';
+import { Camera } from '@material-ui/icons';
 
 const useStyles = makeStyles({
   root: {
@@ -13,6 +14,8 @@ const useStyles = makeStyles({
     flexDirection: 'row',
     flexWrap: 'nowrap',
     justifyContent: 'space-between',
+    maxWidth: 'fit-content',
+    alignSelf: 'center'
   },
   NavButtons: {
     margin: '.5rem'
@@ -36,9 +39,9 @@ export default function SimpleBottomNavigation() {
       showLabels
       className={classes.root}
     >
-      <BottomNavigationAction className={classes.NavButtons} value="home"  label="Development" icon={<CodeIcon />} />
-      <BottomNavigationAction className={classes.NavButtons} value="design"  label="Design" icon={<BrushIcon />} />
-      <BottomNavigationAction className={classes.NavButtons} value="photography" label="Photography" icon={<CameraAlt />} />
+      <BottomNavigationAction className={classes.NavButtons} value="home"  label="Links" icon={<HomeIcon />} />
+      <BottomNavigationAction className={classes.NavButtons} value="photos"  label="Photos" icon={<CameraAlt />} />
+      <BottomNavigationAction className={classes.NavButtons} value="shop" label="Shop" icon={<ShoppingCartIcon />} />
     </BottomNavigation>
   );
 }
