@@ -5,8 +5,8 @@ import SocialBar from "./SocialBar";
 
 const useStyles = makeStyles({
   image: {
-    height: "96px",
-    width: "96px",
+    height: "144px",
+    width: "144px",
     borderRadius: "50%",
     display: 'flex',
     alignSelf: 'center',
