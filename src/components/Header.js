@@ -46,7 +46,7 @@ export default function Header() {
         variant="h1"
         component="h2"
       >
-        Hello, I'm Mark
+        Hello, I'm John Doe
       </Typography>
       <Typography
         className={classes.subtitle}
