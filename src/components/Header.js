@@ -54,7 +54,7 @@ export default function Header() {
         color="textSecondary"
         component="p"
       >
-        Enthusiastic and self-motivated full stack web developer and designer with 5+ years of web experience. Skillful communicator with experience planning, leading, and executing multiple projects with clarity and efficiency.
+        With a flair for creativity and over a decade of experience, John Doe is a dynamic designer known for delivering innovative solutions. Combining technical expertise with artistic vision, he consistently surpasses client expectations. Explore John Doe's portfolio to witness a fusion of skillful craftsmanship and visionary thinking.
       </Typography>
       <SocialBar />
     </div>
