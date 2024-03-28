@@ -6,7 +6,6 @@ import HomeIcon from '@mui/icons-material/Home';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import CameraAlt from '@material-ui/icons/CameraAlt';
 import { useHistory } from 'react-router-dom';
-import { Camera } from '@material-ui/icons';
 
 const useStyles = makeStyles({
   root: {
