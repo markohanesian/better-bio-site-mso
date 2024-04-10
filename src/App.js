@@ -14,7 +14,10 @@ import Header from "../src/components/Header";
 import Footer from "../src/components/Footer";
 // Link types
 import DesignItem from "./components/DesignItem";
-import BasicLink from "./components/BasicLink"
+import BasicLink from "./components/BasicLink";
+import AppBar from "./components/AppBar";
+
+
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -31,7 +34,7 @@ function App() {
       // height: "100vh",
       display: "flex",
       flexDirection: "column",
-      padding: "1rem",
+      // padding: "1rem",
     },
     topBar: {
       display: "flex",
@@ -73,7 +76,7 @@ function App() {
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
-      padding: '16px'
+      // padding: '16px'
     },
     SectionIcon: {
       margin: '2rem 0 0 0',
@@ -89,6 +92,8 @@ function App() {
         <Paper
           className={classes.app}
         >
+          <AppBar sx={{margin: "-1rem"}}/>
+
           <Grid
             className={classes.topBar}
           >
