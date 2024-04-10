@@ -16,7 +16,7 @@ import AdbIcon from '@mui/icons-material/Adb';
 const pages = ['Products', 'Pricing', 'Blog'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
-function ResponsiveAppBar({toggleButton}) {
+function ResponsiveAppBar({ toggleButton }) {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -125,13 +125,18 @@ function ResponsiveAppBar({toggleButton}) {
             ))}
           </Box>
 
-          <Box sx={{ flexGrow: 0 }}>
+          <Box sx={{
+            display: 'flex',
+            alignItems: 'center',
+            flexGrow: 0
+          }}>
+            {toggleButton && toggleButton}
+
             <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0, marginLeft: "1rem" }}>
                 <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
               </IconButton>
             </Tooltip>
-            {toggleButton && toggleButton}
             <Menu
               sx={{ mt: '45px' }}
               id="menu-appbar"
