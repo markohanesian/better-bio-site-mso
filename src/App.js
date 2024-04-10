@@ -92,17 +92,12 @@ function App() {
         <Paper
           className={classes.app}
         >
-          <AppBar sx={{margin: "-1rem"}}/>
-
-          <Grid
-            className={classes.topBar}
-          >
+          <AppBar toggleButton={
             <DarkModeToggle
               size={60}
               checked={darkMode}
               onChange={() => setDarkMode(!darkMode)}
-            ></DarkModeToggle>
-          </Grid>
+            ></DarkModeToggle>} />
           <Header />
           <Router>
             <div>
