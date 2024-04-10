@@ -92,7 +92,8 @@ function App() {
         <Paper
           className={classes.app}
         >
-          <AppBar toggleButton={
+          <AppBar 
+            toggleButton={
             <DarkModeToggle
               size={60}
               checked={darkMode}

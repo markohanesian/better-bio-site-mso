@@ -30,6 +30,7 @@ const useStyles = makeStyles({
     justifyContent: 'center',
     alignItems: "center",
     textAlign: 'center',
+    marginTop: "1rem",
     marginBottom: "2rem"
   }
 });

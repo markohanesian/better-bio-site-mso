@@ -134,7 +134,7 @@ function ResponsiveAppBar({ toggleButton }) {
 
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0, marginLeft: "1rem" }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                <Avatar alt="John Doe" src="john-doe-headshot.jpg" />
               </IconButton>
             </Tooltip>
             <Menu
