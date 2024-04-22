@@ -9,15 +9,13 @@ import {
 } from "@material-ui/core/styles";
 import "./App.css";
 // components
-import NavBar from './components/NavBar'
+import NavBar from "./components/NavBar";
 import Header from "../src/components/Header";
 import Footer from "../src/components/Footer";
 // Link types
 import DesignItem from "./components/DesignItem";
 import BasicLink from "./components/BasicLink";
 import AppBar from "./components/AppBar";
-
-
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -40,7 +38,7 @@ function App() {
       display: "flex",
       flexDirection: "row",
       justifyContent: "flex-end",
-      alignItems: "center"
+      alignItems: "center",
     },
     heading2: {
       display: "flex",
@@ -55,105 +53,55 @@ function App() {
       fontWeight: "400",
     },
     bottomNav: {
-      Backgroundcolor: 'green'
-
+      Backgroundcolor: "green",
     },
     gridContainer: {
       flexGrow: 1,
       marginTop: "1rem",
       display: "flex",
       flexDirection: "column",
-      justifyContent: "center"
+      justifyContent: "center",
     },
     gridColumn: {
       display: "flex",
       flexDirection: "column",
       justifyContent: "center",
       alignItems: "center",
-      padding: "1rem"
+      padding: "1rem",
     },
-    DevContainer: {
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      // padding: '16px'
+    LinkContainer: {
+      display: "flex",
+      flexDirection: "column",
+      padding: theme.spacing(2),
+      alignItems: "center",
+      justifyContent: "space-around",
     },
     SectionIcon: {
-      margin: '2rem 0 0 0',
-      fontSize: '3rem',
-    }
-
+      margin: "2rem 0 0 0",
+      fontSize: "3rem",
+    },
   });
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
       <ThemeProvider theme={theme}>
-        <Paper
-          className={classes.app}
-        >
-          <AppBar 
+        <Paper className={classes.app}>
+          <AppBar
             toggleButton={
-            <DarkModeToggle
-              size={60}
-              checked={darkMode}
-              onChange={() => setDarkMode(!darkMode)}
-            ></DarkModeToggle>} />
+              <DarkModeToggle
+                size={60}
+                checked={darkMode}
+                onChange={() => setDarkMode(!darkMode)}
+              ></DarkModeToggle>
+            }
+          />
           <Header />
-          <Router>
-            <div>
-              <Switch>
-                <Route path='/photography' component={() => {
-                  window.location.href = 'http://markohanesian.photography/';
-                  return null;
-                }} />
-                {/* Design Section */}
-                <Route path="/design">
-                  <Grid className={classes.gridContainer} container>
-                    <Grid className={classes.DevContainer}>
-                      <NavBar />
-                      <DesignItem
-                        cardImage="item-images/styledPP.png"
-                        cardTitle="Web App Dashboard Concept"
-                        cardDescription="Wardrobe app concept user Dashboard designed in Adobe xD with original photography"
-                        dribbleURL="https://dribbble.com/shots/13904483-Profile-Page-styld-app-concept"
-                      />
-                      <DesignItem
-                        cardImage="item-images/tulips-concept.png"
-                        cardTitle="Shoe Product Page Concept"
-                        cardDescription="Product landing page concept made in Adobe XD | featuring my product photography"
-                        dribbleURL="https://dribbble.com/shots/14062665-Tulips-homepage-concept"
-                      />
-
-                      <DesignItem
-                        cardImage="item-images/hisherswatches.jpg"
-                        cardTitle="Apple Watch Faces Concept"
-                        cardDescription="Apple Watch faces concept designed in Adobe xD and Photoshop"
-                        dribbleURL="https://dribbble.com/shots/13774573-Apple-Watch-Face-Concept-Rose-Gold-His-Hers?utm_source=Clipboard_Shot&utm_campaign=markohanesian&utm_content=Apple%20Watch%20Face%20Concept%20-%20Rose%20Gold%20His%20%2B%20Hers&utm_medium=Social_Share"
-                      />
-
-                      <DesignItem
-                        cardImage="item-images/signup-pgp.png"
-                        cardTitle="App Signup Page Concept"
-                        cardDescription="Mobile-friendly signup form conceptdesigned in Adobe xD"
-                        dribbleURL="https://dribbble.com/shots/13495221-Signup-Form-Concept-Project-Golden-Phoenix?utm_source=Clipboard_Shot&utm_campaign=markohanesian&utm_content=Signup%20Form%20Concept%20-%20Project%20Golden%20Phoenix&utm_medium=Social_Share"
-                      />
-                    </Grid>
-                  </Grid>
-                </Route>
-                {/* Development Section */}
-                <Route path="/">
-                  <Grid className={classes.gridContainer} container>
-                    <NavBar />
-                    <Grid className={classes.DevContainer}>
-                      <BasicLink />
-                    </Grid>
-                  </Grid>
-                </Route>
-              </Switch>
-            </div>
-          </Router>
-          <Footer />
+          <div className={classes.LinkContainer} >
+            <BasicLink />
+            <BasicLink />
+            <BasicLink />
+          </div>
         </Paper>
       </ThemeProvider>
     </div>
