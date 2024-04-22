@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "left",
     alignItems: "center", // Center the avatar and text
-    width: "100%",
+    width: "90vw",
     maxWidth: "666px",
   },
   avatar: {
