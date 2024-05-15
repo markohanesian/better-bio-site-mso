@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Grid, Paper } from "@material-ui/core";
+// import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Paper } from "@material-ui/core";
 import DarkModeToggle from "react-dark-mode-toggle";
 import {
   ThemeProvider,
@@ -9,11 +9,8 @@ import {
 } from "@material-ui/core/styles";
 import "./App.css";
 // components
-import NavBar from "./components/NavBar";
 import Header from "../src/components/Header";
-import Footer from "../src/components/Footer";
 // Link types
-import DesignItem from "./components/DesignItem";
 import BasicLink from "./components/BasicLink";
 import AppBar from "./components/AppBar";
 
