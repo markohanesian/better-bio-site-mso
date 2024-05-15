@@ -22,7 +22,8 @@ const useStyles = makeStyles({
     flexWrap: 'wrap',
     fontSize: "14px",
     fontWeight: "400",
-    maxWidth: '22rem'
+    maxWidth: '22rem',
+    color: "#333"
   },
   container: {
     display: 'flex',
@@ -51,7 +52,7 @@ export default function Header() {
       </Typography>
       <Typography
         className={classes.subtitle}
-        variant="body2"
+        variant="body1"
         color="textSecondary"
         component="p"
       >
