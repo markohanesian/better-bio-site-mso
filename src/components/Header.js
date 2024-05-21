@@ -2,6 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import SocialBar from "./SocialBar";
+import { useTheme } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
   image: {
@@ -23,7 +24,6 @@ const useStyles = makeStyles({
     fontSize: "14px",
     fontWeight: "400",
     maxWidth: '22rem',
-    color: "#333"
   },
   container: {
     display: 'flex',
@@ -38,6 +38,7 @@ const useStyles = makeStyles({
 
 export default function Header() {
   const classes = useStyles();
+  const theme = useTheme();
 
   return (
     <div className={classes.container}>
@@ -53,7 +54,7 @@ export default function Header() {
       <Typography
         className={classes.subtitle}
         variant="body1"
-        color="textSecondary"
+        color={theme.palette.text.primary}
         component="p"
       >
         With a flair for creativity and over a decade of experience, John Doe is a dynamic designer known for delivering innovative solutions. Combining technical expertise with artistic vision, he consistently surpasses client expectations. Explore John Doe's portfolio to witness a fusion of skillful craftsmanship and visionary thinking.
