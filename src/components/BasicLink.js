@@ -2,8 +2,8 @@
 
 import React from "react";
 import { Button, Avatar, makeStyles } from "@material-ui/core";
+import { useTheme } from '@material-ui/core/styles';
 
-// Define your custom styles using makeStyles
 const useStyles = makeStyles((theme) => ({
   button: {
     borderRadius: "50px", // Rounded edges
@@ -22,19 +22,21 @@ const useStyles = makeStyles((theme) => ({
 
 const BasicLink = () => {
   const classes = useStyles();
+  const theme = useTheme();
 
   return (
     <Button
       variant="contained"
-      color="primary"
+      style={{ background: theme.palette.text.secondary }}
       className={classes.button}
       href="https://your-link-here.com"
       target="_blank"
     >
       <Avatar
         alt="Your Avatar"
-        src="/path/to/your/avatar-image.jpg" // Replace with your actual image URL
+        src="/path/to/your/avatar-image.jpg" 
         className={classes.avatar}
+        style={{ color: theme.palette.text.primary }}
       />
       Visit My Link
     </Button>
