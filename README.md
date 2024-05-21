@@ -16,6 +16,8 @@ I need a link in bio website that functions as a full website but provides a goo
 ## Planned Features/Outstanding Issues
 * Updated theme
 * Functional menu
+* Bio summary text theme working in dark mode
+* Menu pages linked
 
 ## Authors
 * [Mark Ohanesian](https://github.com/markohanesian) 
