@@ -15,14 +15,8 @@ I need a link in bio website that functions as a full website but provides a goo
 
 ## Planned Features/Outstanding Issues
 * Updated theme
-<<<<<<< HEAD
 * Menu links connect to pages
 * Avatar button in navbar only available once authenticated
-=======
-* Functional menu
-* Bio summary text theme working in dark mode
-* Menu pages linked
->>>>>>> c13d7ddc2b2f86e2e9e11cebe25554f85ce454c3
 
 ## Authors
 * [Mark Ohanesian](https://github.com/markohanesian) 
